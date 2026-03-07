@@ -20,4 +20,8 @@ void main() {
     String sinopse = "Um jedi teve um pesadelo e então explodiu a galáxia";
     System.out.println(sinopse);
 
+    int classificacao = (int) (media / 2); // casting explicito
+
+    System.out.println(classificacao);
+
 }

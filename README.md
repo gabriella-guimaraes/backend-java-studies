@@ -8,7 +8,11 @@ Repositório desenvolvido durante o curso **"Java: criando sua primeira aplicaç
 
 ## 📚 Conteúdo abordado
 
-Neste módulo foram trabalhados os seguintes conceitos:
+### ✔️ Java: criando sua primeira aplicação
+
+Neste primeiro módulo foram trabalhados os fundamentos da linguagem Java e a estrutura básica de uma aplicação.
+
+**Conceitos abordados:**
 
 - Criação de um projeto Java no IntelliJ IDEA
 - Processo de compilação e execução de uma aplicação Java
@@ -18,6 +22,19 @@ Neste módulo foram trabalhados os seguintes conceitos:
 - Entrada de dados com `Scanner`
 - Estruturas condicionais (`if`, `else`)
 - Estruturas de repetição (`for`, `while`)
+
+### 🚧 Java: aplicando a Orientação a Objetos *(em andamento)*
+
+Neste módulo a aplicação passa a ser estruturada utilizando **Programação Orientada a Objetos (POO)**.
+
+**Conceitos abordados:**
+
+- Modelagem de problemas utilizando **classes e objetos**
+- Criação de **atributos e métodos**
+- Uso de **encapsulamento** para proteger dados
+- Aplicação de **herança** para reaproveitamento de código
+- Uso de **polimorfismo** para tornar o código mais flexível
+- Utilização de **interfaces** para padronização de comportamentos
 
 ---
 
@@ -48,7 +65,7 @@ Neste módulo foram trabalhados os seguintes conceitos:
 
 ## ▶️ Como executar o projeto
 
-1. Certifique-se de ter o **JDK 17** instalado.
+1. Certifique-se de ter o **JDK 25** instalado.
 2. Abra o projeto na **IntelliJ IDEA**.
 3. Execute a classe que contém o método `main`.
 

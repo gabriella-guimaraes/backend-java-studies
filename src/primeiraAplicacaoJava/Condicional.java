@@ -1,3 +1,5 @@
+package primeiraAplicacaoJava;
+
 public class Condicional {
     static void main() {
         int anoLancamento = 2004;

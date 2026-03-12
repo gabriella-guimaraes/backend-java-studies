@@ -1,3 +1,5 @@
+package primeiraAplicacaoJava;
+
 import java.util.Scanner;
 
 public class Loop {

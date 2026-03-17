@@ -1,3 +1,6 @@
+import exerciciosExtras.classes.Calculadora;
+import exerciciosExtras.classes.Pessoa;
+
 public class Principal {
     static void main() {
         Filme filme = new Filme(); // Tipo Referência

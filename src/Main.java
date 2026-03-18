@@ -2,11 +2,11 @@ void main() {
     IO.println("Esse é o Screen Match.... o Movie Browser só que em Java");
 
     int anoLancamento = 2004;
-    String nomeFilme = "Filme: Star Wars III: A Vingança dos Sith";
+    String nomeFilme = "br.com.screenmatch.modelos.Filme: Star Wars III: A Vingança dos Sith";
     boolean incluidoNoPlano = true;
     double notaDoFilme = 7.6;
 
-    System.out.println("Filme: " + nomeFilme + ". Lançado em: " + anoLancamento + ". Nota média: " + notaDoFilme);
+    System.out.println("br.com.screenmatch.modelos.Filme: " + nomeFilme + ". Lançado em: " + anoLancamento + ". Nota média: " + notaDoFilme);
     System.out.println("Disponível no seu plano: " + incluidoNoPlano);
 
     double notaPublico = 9.8;

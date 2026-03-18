@@ -1,5 +1,4 @@
-import exerciciosExtras.classes.Calculadora;
-import exerciciosExtras.classes.Pessoa;
+import br.com.screenmatch.modelos.Filme;
 
 public class Principal {
     static void main() {

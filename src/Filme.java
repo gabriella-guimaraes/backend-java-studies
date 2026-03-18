@@ -3,8 +3,8 @@ public class Filme {
     String nome;
     int anoLancamento;
     boolean incluidoNoPlano;
-    double somaDasAvaliacoes;
-    int totalDeAvaliacoes;
+    private double somaDasAvaliacoes;
+    private int totalDeAvaliacoes;
     int duracaoEmMinutos;
 
     //Métodos - Ações comuns de objetos da classe filme
@@ -22,6 +22,11 @@ public class Filme {
 
     double pegaMedia() {
         return somaDasAvaliacoes / totalDeAvaliacoes;
+    }
+
+    //Método Acessor
+    int getTotalDeAvaliacoes() {
+        return totalDeAvaliacoes;
     }
 
 

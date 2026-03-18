@@ -7,7 +7,6 @@ public class Principal {
 
         filme.nome = "Star Wars III: A Vingança dos Sith";
         filme.anoLancamento = 2005;
-        filme.somaDasAvaliacoes = 9.8;
         filme.incluidoNoPlano = true;
 
         filme.exibeFichcaTecnica();
@@ -15,10 +14,8 @@ public class Principal {
         filme.avalia(10);
         filme.avalia(8);
 
-        System.out.println(filme.somaDasAvaliacoes);
-        System.out.println(filme.totalDeAvaliacoes);
-
-        System.out.println(filme.pegaMedia());
+        System.out.println("Total de avaliações: " + filme.getTotalDeAvaliacoes());
+        System.out.println("Nota: " + filme.pegaMedia());
 
     }
 }

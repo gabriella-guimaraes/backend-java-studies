@@ -4,9 +4,10 @@ public class Principal {
     static void main() {
         Filme filme = new Filme(); // Tipo Referência
 
-        filme.nome = "Star Wars III: A Vingança dos Sith";
-        filme.anoLancamento = 2005;
-        filme.incluidoNoPlano = true;
+        filme.setNome("Star Wars III: A Vingança dos Sith");
+        filme.setAnoLancamento(2005);
+        filme.setIncluidoNoPlano(true);
+        filme.setDuracaoEmMinutos(180);
 
         filme.exibeFichcaTecnica();
         filme.avalia(5);

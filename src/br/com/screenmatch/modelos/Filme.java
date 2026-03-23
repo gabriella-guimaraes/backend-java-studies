@@ -2,12 +2,12 @@ package br.com.screenmatch.modelos;
 
 public class Filme {
     //Abstração
-    public String nome;
-    public int anoLancamento;
-    public boolean incluidoNoPlano;
+    private String nome;
+    private int anoLancamento;
+    private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
-    public int duracaoEmMinutos;
+    private int duracaoEmMinutos;
 
     //Métodos - Ações comuns de objetos da classe filme
     public void exibeFichcaTecnica() {
@@ -31,5 +31,35 @@ public class Filme {
         return totalDeAvaliacoes;
     }
 
+    public String getNome() {
+        return nome;
+    }
 
+    public int getAnoLancamento() {
+        return anoLancamento;
+    }
+
+    public boolean isIncluidoNoPlano() {
+        return incluidoNoPlano;
+    }
+
+    public int getDuracaoEmMinutos() {
+        return duracaoEmMinutos;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setIncluidoNoPlano(boolean incluidoNoPlano) {
+        this.incluidoNoPlano = incluidoNoPlano;
+    }
+
+    public void setAnoLancamento(int anoLancamento) {
+        this.anoLancamento = anoLancamento;
+    }
+
+    public void setDuracaoEmMinutos(int duracaoEmMinutos) {
+        this.duracaoEmMinutos = duracaoEmMinutos;
+    }
 }

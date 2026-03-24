@@ -1,4 +1,5 @@
 import br.com.screenmatch.modelos.Filme;
+import br.com.screenmatch.modelos.Serie;
 
 public class Principal {
     static void main() {
@@ -16,6 +17,16 @@ public class Principal {
 
         System.out.println("Total de avaliações: " + filme.getTotalDeAvaliacoes());
         System.out.println("Nota: " + filme.pegaMedia());
+
+        Serie serie = new Serie();
+        serie.setNome("Star Wars: Clone Wars");
+        serie.setAnoLancamento(2007);
+        serie.setIncluidoNoPlano(true);
+        serie.setDuracaoEmMinutos(180);
+        serie.setTemporadas(7);
+        serie.setEpisodiosPorTemporada(12);
+        serie.setDuracaoEmMinutos(30);
+        serie.exibeFichcaTecnica();
 
     }
 }

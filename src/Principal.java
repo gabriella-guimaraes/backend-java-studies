@@ -9,6 +9,7 @@ public class Principal {
         filme.setAnoLancamento(2005);
         filme.setIncluidoNoPlano(true);
         filme.setDuracaoEmMinutos(180);
+        System.out.println("Duração em minutos do filme: " + filme.getDuracaoEmMinutos());
 
         filme.exibeFichcaTecnica();
         filme.avalia(5);
@@ -22,11 +23,11 @@ public class Principal {
         serie.setNome("Star Wars: Clone Wars");
         serie.setAnoLancamento(2007);
         serie.setIncluidoNoPlano(true);
-        serie.setDuracaoEmMinutos(180);
         serie.setTemporadas(7);
         serie.setEpisodiosPorTemporada(12);
-        serie.setDuracaoEmMinutos(30);
+        serie.setMinutosPorEpisodio(30);
         serie.exibeFichcaTecnica();
+        System.out.println("Duração para maratonar " + serie.getNome() + ": " + serie.getDuracaoEmMinutos());
 
     }
 }

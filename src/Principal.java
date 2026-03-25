@@ -1,3 +1,4 @@
+import br.com.screenmatch.calculo.CalculadoraDeTempo;
 import br.com.screenmatch.modelos.Filme;
 import br.com.screenmatch.modelos.Serie;
 
@@ -28,6 +29,18 @@ public class Principal {
         serie.setMinutosPorEpisodio(30);
         serie.exibeFichcaTecnica();
         System.out.println("Duração para maratonar " + serie.getNome() + ": " + serie.getDuracaoEmMinutos());
+
+        Filme outroFilme = new Filme(); // Tipo Referência
+        outroFilme.setNome("Ghost in the Shell");
+        outroFilme.setAnoLancamento(2017);
+        outroFilme.setIncluidoNoPlano(true);
+        outroFilme.setDuracaoEmMinutos(107);
+
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(filme);
+        calculadora.inclui(outroFilme);
+        calculadora.inclui(serie);
+        System.out.println(calculadora.getTempoTotal());
 
     }
 }

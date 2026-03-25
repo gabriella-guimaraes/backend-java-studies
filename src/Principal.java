@@ -1,4 +1,6 @@
 import br.com.screenmatch.calculo.CalculadoraDeTempo;
+import br.com.screenmatch.calculo.FiltroRecomentacao;
+import br.com.screenmatch.modelos.Episodio;
 import br.com.screenmatch.modelos.Filme;
 import br.com.screenmatch.modelos.Serie;
 
@@ -41,6 +43,15 @@ public class Principal {
         calculadora.inclui(outroFilme);
         calculadora.inclui(serie);
         System.out.println(calculadora.getTempoTotal());
+
+        FiltroRecomentacao filtro  = new FiltroRecomentacao();
+        filtro.filtra(filme);
+
+        Episodio episodio = new Episodio();
+        episodio.setSerie(serie);
+        episodio.setNumero(1);
+        episodio.setTotalVisualizacoes(1000);
+        filtro.filtra(episodio);
 
     }
 }

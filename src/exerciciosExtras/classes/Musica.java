@@ -1,24 +1,40 @@
 package exerciciosExtras.classes;
 
-public class Musica {
-    public String titulo;
-    public String artista;
-    public int anoLancamento;
-    public double avaliacao;
-    public int numeroDeAvaliacoes;
+public class Musica extends Audio {
+    private String album;
+    private String artista;
+    private String genero;
 
-    public void exibirFichaTecnica() {
-        System.out.println("Nome da música: " + titulo);
-        System.out.println("Artista: " + artista);
-        System.out.println("Ano de lancamento: " + anoLancamento);
+    public String getAlbum() {
+        return album;
     }
 
-    public void avalia(double nota) {
-        avaliacao += nota;
-        numeroDeAvaliacoes ++;
+    public void setAlbum(String album) {
+        this.album = album;
     }
 
-    public double pegaMedia() {
-        return avaliacao / numeroDeAvaliacoes;
+    public String getArtista() {
+        return artista;
+    }
+
+    public void setArtista(String artista) {
+        this.artista = artista;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    @Override
+    public int getClassificacao() {
+        if(this.getTotalDeReproducoes() > 1000) {
+            return 10;
+        } else {
+            return 7;
+        }
     }
 }

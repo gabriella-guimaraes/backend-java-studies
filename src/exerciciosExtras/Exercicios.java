@@ -1,9 +1,6 @@
 package exerciciosExtras;
 
-import exerciciosExtras.classes.Calculadora;
-import exerciciosExtras.classes.Carro;
-import exerciciosExtras.classes.Musica;
-import exerciciosExtras.classes.Pessoa;
+import exerciciosExtras.classes.*;
 
 public class Exercicios {
     static void main() {
@@ -37,5 +34,15 @@ public class Exercicios {
         carro.cor = "preto";
 
         carro.exibirFichaTecnica();
+
+        ConversorMoeda conversorMoeda = new ConversorMoeda();
+        conversorMoeda.converterDolarParaReal(100);
+
+        CalcularSalaRetangular calcularSalaRetangular = new CalcularSalaRetangular();
+        calcularSalaRetangular.calcularArea(12, 20.5);
+        calcularSalaRetangular.calcularPerimetro(24, 30);
+
+        TabuadaMultiplicacao tabuada =  new TabuadaMultiplicacao();
+        tabuada.mostrarTabuada(9);
     }
 }

@@ -4,6 +4,8 @@ import br.com.screenmatch.modelos.Episodio;
 import br.com.screenmatch.modelos.Filme;
 import br.com.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal {
     static void main() {
         Filme filme = new Filme(); // Tipo Referência
@@ -52,6 +54,22 @@ public class Principal {
         episodio.setNumero(1);
         episodio.setTotalVisualizacoes(1000);
         filtro.filtra(episodio);
+
+        var filmeAnimação = new Filme();
+        filmeAnimação.setNome("A Viagem de Chihiro");
+        filmeAnimação.setAnoLancamento(2001);
+        filmeAnimação.setDuracaoEmMinutos(125);
+        filmeAnimação.setDiretor("Hayao Miyazaki");
+        filmeAnimação.setIncluidoNoPlano(true);
+        filmeAnimação.avalia(10);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(filme);
+        listaDeFilmes.add(outroFilme);
+        listaDeFilmes.add(filmeAnimação);
+
+        System.out.println("Quantidade de filmes: " + listaDeFilmes.size());
+        System.out.println("Top 1: " + listaDeFilmes.get(0).getNome());
 
     }
 }

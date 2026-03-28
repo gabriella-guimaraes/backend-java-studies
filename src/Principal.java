@@ -70,6 +70,7 @@ public class Principal {
 
         System.out.println("Quantidade de filmes: " + listaDeFilmes.size());
         System.out.println("Top 1: " + listaDeFilmes.get(0).getNome());
-
+        System.out.println("toString do filme: " + listaDeFilmes.get(1).toString());
+        System.out.println(listaDeFilmes);
     }
 }

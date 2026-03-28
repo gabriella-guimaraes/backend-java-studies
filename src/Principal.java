@@ -8,9 +8,7 @@ import java.util.ArrayList;
 
 public class Principal {
     static void main() {
-        Filme filme = new Filme("Star Wars III: A Vingança dos Sith"); // Tipo Referência
-//        filme.setNome("Star Wars III: A Vingança dos Sith");
-        filme.setAnoLancamento(2005);
+        Filme filme = new Filme("Star Wars III: A Vingança dos Sith", 2005); // Tipo Referência
         filme.setIncluidoNoPlano(true);
         filme.setDuracaoEmMinutos(180);
         System.out.println("Duração em minutos do filme: " + filme.getDuracaoEmMinutos());
@@ -23,9 +21,7 @@ public class Principal {
         System.out.println("Total de avaliações: " + filme.getTotalDeAvaliacoes());
         System.out.println("Nota: " + filme.pegaMedia());
 
-        Serie serie = new Serie();
-        serie.setNome("Star Wars: Clone Wars");
-        serie.setAnoLancamento(2007);
+        Serie serie = new Serie("Star Wars: Clone Wars", 2007);
         serie.setIncluidoNoPlano(true);
         serie.setTemporadas(7);
         serie.setEpisodiosPorTemporada(12);
@@ -33,9 +29,7 @@ public class Principal {
         serie.exibeFichcaTecnica();
         System.out.println("Duração para maratonar " + serie.getNome() + ": " + serie.getDuracaoEmMinutos());
 
-        Filme outroFilme = new Filme("Ghost in the Shell"); // Tipo Referência
-//        outroFilme.setNome("Ghost in the Shell");
-        outroFilme.setAnoLancamento(2017);
+        Filme outroFilme = new Filme("Ghost in the Shell", 2017); // Tipo Referência
         outroFilme.setIncluidoNoPlano(true);
         outroFilme.setDuracaoEmMinutos(107);
 
@@ -54,9 +48,7 @@ public class Principal {
         episodio.setTotalVisualizacoes(1000);
         filtro.filtra(episodio);
 
-        var filmeAnimação = new Filme("A Viagem de Chihiro");
-//        filmeAnimação.setNome("A Viagem de Chihiro");
-        filmeAnimação.setAnoLancamento(2001);
+        var filmeAnimação = new Filme("A Viagem de Chihiro", 2001);
         filmeAnimação.setDuracaoEmMinutos(125);
         filmeAnimação.setDiretor("Hayao Miyazaki");
         filmeAnimação.setIncluidoNoPlano(true);

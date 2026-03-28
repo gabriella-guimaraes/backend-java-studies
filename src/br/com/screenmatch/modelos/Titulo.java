@@ -9,6 +9,11 @@ public class Titulo {
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
+    public Titulo(String nome, int anoLancamento) {
+        this.nome = nome;
+        this.anoLancamento = anoLancamento;
+    }
+
     //Métodos - Ações comuns de objetos da classe filme
     public void exibeFichcaTecnica() {
         System.out.println("Nome do filme: " + nome);

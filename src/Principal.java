@@ -8,9 +8,8 @@ import java.util.ArrayList;
 
 public class Principal {
     static void main() {
-        Filme filme = new Filme(); // Tipo Referência
-
-        filme.setNome("Star Wars III: A Vingança dos Sith");
+        Filme filme = new Filme("Star Wars III: A Vingança dos Sith"); // Tipo Referência
+//        filme.setNome("Star Wars III: A Vingança dos Sith");
         filme.setAnoLancamento(2005);
         filme.setIncluidoNoPlano(true);
         filme.setDuracaoEmMinutos(180);
@@ -34,8 +33,8 @@ public class Principal {
         serie.exibeFichcaTecnica();
         System.out.println("Duração para maratonar " + serie.getNome() + ": " + serie.getDuracaoEmMinutos());
 
-        Filme outroFilme = new Filme(); // Tipo Referência
-        outroFilme.setNome("Ghost in the Shell");
+        Filme outroFilme = new Filme("Ghost in the Shell"); // Tipo Referência
+//        outroFilme.setNome("Ghost in the Shell");
         outroFilme.setAnoLancamento(2017);
         outroFilme.setIncluidoNoPlano(true);
         outroFilme.setDuracaoEmMinutos(107);
@@ -55,8 +54,8 @@ public class Principal {
         episodio.setTotalVisualizacoes(1000);
         filtro.filtra(episodio);
 
-        var filmeAnimação = new Filme();
-        filmeAnimação.setNome("A Viagem de Chihiro");
+        var filmeAnimação = new Filme("A Viagem de Chihiro");
+//        filmeAnimação.setNome("A Viagem de Chihiro");
         filmeAnimação.setAnoLancamento(2001);
         filmeAnimação.setDuracaoEmMinutos(125);
         filmeAnimação.setDiretor("Hayao Miyazaki");

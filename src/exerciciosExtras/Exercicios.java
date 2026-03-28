@@ -2,6 +2,9 @@ package exerciciosExtras;
 
 import exerciciosExtras.classes.*;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
+
 public class Exercicios {
     static void main() {
         //Desafios
@@ -73,5 +76,25 @@ public class Exercicios {
         Favoritos favoritos = new Favoritos();
         favoritos.inclui(podcast);
         favoritos.inclui(musica);
+
+        Produto produto = new Produto("Papel", 24.5, 100);
+
+        Produto outroProduto = new Produto("Lápis grafite HB", 9.5, 30);
+
+        Produto produtoPremium = new Produto("Café", 30, 50);
+
+        Produto organico = new Produto("Tomate", 7, 10);
+
+        ArrayList<Produto> produtos = new ArrayList<>();
+        produtos.add(produto);
+        produtos.add(outroProduto);
+        produtos.add(produtoPremium);
+        produtos.add(organico);
+        System.out.println("Quantidade de produtos: " + produtos.size());
+        System.out.println(produtos.get(0).getNome());
+        System.out.println(produtos);
+
+        ProdutoPerecivel produtoPerecivel = new ProdutoPerecivel("Maçã", 9, 20, LocalDate.of(2026, 4, 15));
+        System.out.println(produtoPerecivel);
     }
 }

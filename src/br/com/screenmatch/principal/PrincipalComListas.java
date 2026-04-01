@@ -5,6 +5,7 @@ import br.com.screenmatch.modelos.Serie;
 import br.com.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PrincipalComListas {
     static void main() {
@@ -29,7 +30,18 @@ public class PrincipalComListas {
             }
 
         }
-        
+
+        ArrayList<String> buscaPorArtista = new ArrayList<>();
+        buscaPorArtista.add("Natalie Portman");
+        buscaPorArtista.add("Ewan McGregor");
+        buscaPorArtista.add("Adam Driver");
+        System.out.println(buscaPorArtista);
+
+        Collections.sort(buscaPorArtista);
+        System.out.println("Lista ordenada: " +  buscaPorArtista);
+
+        Collections.sort(lista);
+        System.out.println("Lista de títulos ordenada: " +  lista);
 
     }
 }

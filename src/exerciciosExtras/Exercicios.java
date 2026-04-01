@@ -96,5 +96,41 @@ public class Exercicios {
 
         ProdutoPerecivel produtoPerecivel = new ProdutoPerecivel("Maçã", 9, 20, LocalDate.of(2026, 4, 15));
         System.out.println(produtoPerecivel);
+
+        ArrayList<String> listaGames = new ArrayList<>();
+        listaGames.add("Nintendo");
+        listaGames.add("Playstation");
+        listaGames.add("Xbox");
+
+        for (String item : listaGames) {
+            System.out.println(item);
+        }
+
+        Animal animal = new Cachorro();
+
+        if(animal instanceof Cachorro){
+            Cachorro cachorro = (Cachorro) animal;
+            System.out.println(cachorro.late());
+        } else {
+            System.out.println("O objeto não é um cachorro");
+        }
+
+        Produto eletronico = new Produto("Notebook", 12000, 30);
+        Produto acessorio = new Produto("Teclado", 200, 10);
+        Produto componente = new Produto("Memória 16gb", 99000, 1);
+
+        ArrayList<Produto> listaProdutos = new ArrayList<>();
+        listaProdutos.add(acessorio);
+        listaProdutos.add(componente);
+        listaProdutos.add(eletronico);
+
+        double somaPrecos = 0;
+        for (Produto item : listaProdutos) {
+            somaPrecos += item.getPreco();
+        }
+
+        double precoMedio = somaPrecos / listaProdutos.size();
+        System.out.println("Preco medio dos produtos: " + precoMedio);
+        System.out.println("Tá caro chefe T-T");
     }
 }

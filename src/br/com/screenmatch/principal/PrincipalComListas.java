@@ -7,6 +7,7 @@ import br.com.screenmatch.modelos.Titulo;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
 public class PrincipalComListas {
     static void main() {
@@ -18,7 +19,7 @@ public class PrincipalComListas {
         filmeAnimação.avalia(10);
         Serie serie = new Serie("Star Wars: Clone Wars", 2007);
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+        List<Titulo> lista = new ArrayList<>();
         lista.add(filme);
         lista.add(outroFilme);
         lista.add(filmeAnimação);

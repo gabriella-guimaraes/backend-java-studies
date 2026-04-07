@@ -6,6 +6,7 @@ import br.com.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class PrincipalComListas {
     static void main() {
@@ -42,6 +43,9 @@ public class PrincipalComListas {
 
         Collections.sort(lista);
         System.out.println("Lista de títulos ordenada: " +  lista);
+
+        lista.sort(Comparator.comparing(Titulo::getAnoLancamento));
+        System.out.println("Ordenando por ano: " + lista);
 
     }
 }

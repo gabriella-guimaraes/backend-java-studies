@@ -37,7 +37,7 @@ Neste módulo a aplicação passa a ser estruturada utilizando **Programação O
 - Utilização de **interfaces** para padronização de comportamentos
 
 ---
-### 🚧 Java: trabalhando com listas e coleções de dados *(em andamento)*
+### ✔️ Java: trabalhando com listas e coleções de dados
 
 Neste módulo, a aplicação passa a lidar com múltiplos objetos em memória, aproximando-se de cenários reais de sistemas backend.
 
@@ -52,6 +52,27 @@ Neste módulo, a aplicação passa a lidar com múltiplos objetos em memória, a
 - Casting de objetos
 - Verificação de tipo com instanceof
 - Aplicação prática de polimorfismo em coleções
+
+---
+
+### 🚧 Java: consumindo API, gravando arquivos e lidando com erros *(em andamento)*
+
+Neste módulo, a aplicação evolui para cenários mais próximos do mundo real, integrando-se com serviços externos e lidando com persistência de dados e falhas.
+
+**Conceitos que serão abordados:**
+
+- Consumo de APIs HTTP em Java
+- Envio de requisições e leitura de respostas
+- Conversão de dados JSON para objetos Java
+- Uso da biblioteca `Gson` para serialização e desserialização
+- Manipulação de dados no formato JSON
+- Leitura e escrita de arquivos com o pacote `java.io`
+- Tratamento de exceções (`try`, `catch`, `finally`)
+- Criação de exceções personalizadas
+- Boas práticas de organização de código
+- Separação de responsabilidades em classes e possíveis interfaces
+
+---
 
 ## 🛠️ Tecnologias utilizadas
 

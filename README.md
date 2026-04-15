@@ -102,10 +102,33 @@ Neste módulo, a aplicação evolui para cenários mais próximos do mundo real,
 ## ▶️ Como executar o projeto
 
 1. Certifique-se de ter o **JDK 25** instalado.
-2. Abra o projeto na **IntelliJ IDEA**.
-3. Execute a classe que contém o método `main`.
+2. Configure a variável de ambiente OMDB_API_KEY (veja seção abaixo)
+3. Abra o projeto na **IntelliJ IDEA**.
+4. Execute a classe que contém o método `main`.
 
 ---
+
+## 🔐 Configuração da API (OMDb)
+
+Este projeto realiza o consumo da API pública do OMDb API para busca de informações sobre filmes.
+
+Por questões de segurança, a chave da API (API Key) não está armazenada diretamente no código-fonte.
+
+Em vez disso, deve ser utilizada uma variável de ambiente, evitando o versionamento de dados sensíveis no repositório.
+
+### 📌 Como obter uma API Key
+Acesse o site oficial [OMDb API](https://omdbapi.com/) e solicite sua chave gratuita.
+
+Você receberá a API Key por e-mail
+
+### ⚙️ Como configurar a variável de ambiente
+🪟 Terminal:
+
+```powershell
+setx OMDB_API_KEY "sua_chave_aqui"
+```
+
+Após executar o comando, feche e reabra o terminal ou a IDE
 
 ## 📌 Observação
 

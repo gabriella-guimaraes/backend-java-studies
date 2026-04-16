@@ -22,26 +22,28 @@ public class PrincipalComBusca {
 
         String url = "http://www.omdbapi.com/?t=" + busca + "&apikey=" +apiKey;
 
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(url))
-                .build();
-        HttpResponse<String> response = client
-                .send(request, HttpResponse.BodyHandlers.ofString());
-
-        String json = response.body();
-        System.out.println(json);
-
-        Gson gson = new GsonBuilder()
-                .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
-                .create();
-        // Titulo titulo = gson.fromJson(json, Titulo.class);
-        TituloOmdb tituloOmdb = gson.fromJson(json, TituloOmdb.class);
-        System.out.println(tituloOmdb);
-
         try {
+
+            HttpClient client = HttpClient.newHttpClient();
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create(url))
+                    .build();
+            HttpResponse<String> response = client
+                    .send(request, HttpResponse.BodyHandlers.ofString());
+
+            String json = response.body();
+            System.out.println(json);
+
+            Gson gson = new GsonBuilder()
+                    .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
+                    .create();
+
+            TituloOmdb tituloOmdb = gson.fromJson(json, TituloOmdb.class);
+            System.out.println(tituloOmdb);
+
             Titulo titulo = new Titulo(tituloOmdb);
             System.out.println("Título já convertido" + titulo);
+
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: ");
             System.out.println(e.getMessage());

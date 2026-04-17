@@ -7,6 +7,7 @@ import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -44,6 +45,10 @@ public class PrincipalComBusca {
 
             Titulo titulo = new Titulo(tituloOmdb);
             System.out.println("Título já convertido" + titulo);
+
+            FileWriter escrita = new FileWriter("filmes.txt");
+            escrita.write(titulo.toString());
+            escrita.close();
 
         } catch (ErroDeConversaoDeAnoException e) {
             System.out.println("Erro de conversão de ano:");

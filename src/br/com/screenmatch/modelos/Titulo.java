@@ -28,7 +28,7 @@ public class Titulo implements Comparable<Titulo> {
         }
 
         this.anoLancamento = Integer.valueOf(tituloOmdb.year());
-        this.duracaoEmMinutos = Integer.valueOf(tituloOmdb.runtime().substring(0,2));
+        this.duracaoEmMinutos = Integer.valueOf(tituloOmdb.runtime().substring(0,2)); // TODO: criar tratativa para converter filmes com duração superior a 60 min (3 caracteres)
     }
 
     //Métodos - Ações comuns de objetos da classe filme

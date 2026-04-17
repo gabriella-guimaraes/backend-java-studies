@@ -1,5 +1,6 @@
 package br.com.screenmatch.principal;
 
+import br.com.screenmatch.excecao.ErroDeConversaoDeAnoException;
 import br.com.screenmatch.modelos.Titulo;
 import br.com.screenmatch.modelos.TituloOmdb;
 import com.google.gson.FieldNamingPolicy;
@@ -20,7 +21,7 @@ public class PrincipalComBusca {
         var busca = leitura.nextLine();
         String apiKey = System.getenv("OMDB_API_KEY");
 
-        String url = "http://www.omdbapi.com/?t=" + busca + "&apikey=" +apiKey;
+        String url = "http://www.omdbapi.com/?t=" + busca.replace(" ", "+") + "&apikey=" +apiKey;
 
         try {
 
@@ -44,7 +45,11 @@ public class PrincipalComBusca {
             Titulo titulo = new Titulo(tituloOmdb);
             System.out.println("Título já convertido" + titulo);
 
-        } catch (Exception e) {
+        } catch (ErroDeConversaoDeAnoException e) {
+            System.out.println("Erro de conversão de ano:");
+            System.out.println(e.getMessage());
+        }
+        catch (Exception e) {
             System.out.println("Ocorreu um erro: ");
             System.out.println(e.getMessage());
         }
